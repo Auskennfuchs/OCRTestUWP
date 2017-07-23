@@ -1,0 +1,2 @@
+MainPackage=C:\VC\VS2012\OCRTestUWP\OCRTestUWP\bin\x86\Release\OCRTestUWP_1.0.0.0_x86.appx
+SymbolPackage=C:\VC\VS2012\OCRTestUWP\OCRTestUWP\AppPackages\OCRTestUWP_1.0.0.0_Test\OCRTestUWP_1.0.0.0_x86.appxsym

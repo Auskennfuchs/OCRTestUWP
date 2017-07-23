@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="OCRTestUWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:OCRTestUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Grid Background="{ThemeResource AppBarBackground}" PointerReleased="onImageRelease" SizeChanged="onSizeChanged">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="179*"/>
+            <RowDefinition Height="91*"/>
+        </Grid.RowDefinitions>
+        <Image x:Name="preview" Margin="8" Stretch="Uniform" Grid.Row="0" />
+        <Canvas>
+            <Rectangle x:Name="selectBox" Width="0" Height="0" Fill="#7FFFFFFF" PointerMoved="onSelectBoxMove" Stroke="#CC000000" StrokeDashArray="5" StrokeThickness="2"/>
+        </Canvas>
+
+        <TextBox x:Name="ocrResult" HorizontalAlignment="Left" Margin="10,10,0,10" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" Width="328"
+                   ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollMode="Auto" IsReadOnly="True"/>
+        <Image x:Name="cropimage" HorizontalAlignment="Left" Margin="364,10,0,10" Grid.Row="1" Width="356"/>
+    </Grid>
+</Page>
